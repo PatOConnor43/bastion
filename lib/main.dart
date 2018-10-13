@@ -1,3 +1,4 @@
+import 'package:bastion/widgets/navigation_tiles.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Bastion());
@@ -30,7 +31,7 @@ class _BastionPageState extends State<BastionPage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Container(),
+      body: NavigationTiles(),
     );
   }
 }
