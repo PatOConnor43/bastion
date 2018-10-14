@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Profile extends StatelessWidget {
+class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text('hey'),);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Bastion'),
+      ),
+      body: Text('Test'),
+    );
   }
 }
