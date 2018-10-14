@@ -1,4 +1,6 @@
+import 'package:bastion/constants.dart';
 import 'package:bastion/widgets/navigation_tiles.dart';
+import 'package:bastion/widgets/profile_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Bastion());
@@ -8,6 +10,8 @@ class Bastion extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Bastion',
+      initialRoute: '/',
+      routes: {RouteConstants.PROFILE: (context) => ProfilePage()},
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
